@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | Drishya Sahayak</title>
+    <meta name="description" content="Explore the advanced capabilities of the Drishya Sahayak AI vision device.">
+
+    <!-- Styles (Same as Index) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <style>
+        .feature-hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .tech-card {
+            background: var(--bg-surface-2);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s var(--ease-out);
+        }
+
+        .tech-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .tech-detail-list {
+            margin-top: 1.5rem;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 1.5rem;
+        }
+
+        .tech-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .tech-detail-item svg {
+            color: var(--accent-primary);
+            width: 1rem;
+            height: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="main-navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Drishya Sahayak.</a>
+            <ul class="nav-links desktop-only" style="list-style: none;">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link active">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="flex-center desktop-only" style="gap: 1rem;">
+                <a href="#newsletter" class="btn btn-ghost"
+                    onclick="window.openModal(document.getElementById('newsletter-modal').innerHTML)">Newsletter</a>
+                <a href="contact.html" class="btn btn-primary">Pre-order</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="feature-hero animate-on-scroll">
+        <div class="container">
+            <h1 style="margin-bottom: 1.5rem;">The Technology of <span class="text-gradient">Independence</span></h1>
+            <p style="font-size: 1.25rem; margin: 0 auto; max-width: 700px;">
+                Built on a custom raspberry pi architecture with edge-optimized AI models.
+                Powerful vision processing without the need for an internet connection.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Features -->
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- Feature 1 -->
+            <div class="grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center; gap: 4rem; margin-bottom: 8rem;">
+                <div class="animate-on-scroll">
+                    <div
+                        style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); height: 400px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <div
+                            style="position: absolute; inset: 0; background: radial-gradient(circle at 30% 70%, rgba(56, 189, 248, 0.1), transparent 50%);">
+                        </div>
+                        <!-- Abstract Visualization -->
+                        <div
+                            style="width: 80%; height: 2px; background: var(--accent-primary); box-shadow: 0 0 20px var(--accent-primary);">
+                        </div>
+                        <div
+                            style="position: absolute; width: 100px; height: 100px; border: 1px solid var(--accent-secondary); border-radius: 50%; opacity: 0.5;">
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll" style="transition-delay: 200ms;">
+                    <h2 style="margin-bottom: 1.5rem;">Real-Time Object Detection</h2>
+                    <p>Our custom YOLOv12-Nano architecture runs at 30fps directly on device. It identifies specific
+                        objects, people, and obstacles in your path with 98% accuracy.</p>
+                    <ul class="tech-detail-list" style="border: none; padding: 0;">
+                        <li class="tech-detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Latency under 100ms
+                        </li>
+                        <li class="tech-detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Recognizes 200+ classes of objects
+                        </li>
+                        <li class="tech-detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Adaptive low-light enhancement
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center; gap: 4rem; margin-bottom: 8rem;">
+                <!-- Swapped order in HTML for logic, CSS can handle visual swap if needed, but linear stack on mobile is safer -->
+                <div class="animate-on-scroll" style="order: 2;">
+                    <h2 style="margin-bottom: 1.5rem;">Conversational AI Assistant</h2>
+                    <p>Just ask. The integrated LLM allows natural conversation about your surroundings. "Read this sign
+                        for me" or "Is the crosswalk light green?"</p>
+                    <ul class="tech-detail-list" style="border: none; padding: 0;">
+                        <li class="tech-detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Natural Language Processing (NLP)
+                        </li>
+                        <li class="tech-detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Context-aware responses
+                        </li>
+                        <li class="tech-detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Offline OCR (Text Reading)
+                        </li>
+                    </ul>
+                </div>
+                <div class="animate-on-scroll" style="order: 1;">
+                    <div
+                        style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); height: 400px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)"
+                            stroke-width="1" style="opacity: 0.8;">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                            <line x1="12" y1="19" x2="12" y2="23" />
+                            <line x1="8" y1="23" x2="16" y2="23" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Details Grid -->
+            <div class="text-center animate-on-scroll">
+                <h2>Technical Specifications</h2>
+            </div>
+
+            <div class="tech-grid animate-on-scroll">
+                <div class="tech-card">
+                    <h3>Hardware</h3>
+                    <div class="tech-detail-list">
+                        <div class="tech-detail-item"><span>Processor:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">Quad-Core ARM Cortex-A76</span>
+                        </div>
+                        <div class="tech-detail-item"><span>Camera:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">12MP Wide Angle</span></div>
+                        <div class="tech-detail-item"><span>Battery:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">5000mAh (12h life)</span></div>
+                        <div class="tech-detail-item"><span>Weight:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">180g (Lightweight)</span></div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Software</h3>
+                    <div class="tech-detail-list">
+                        <div class="tech-detail-item"><span>OS:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">DrishyaOS (Linux based)</span>
+                        </div>
+                        <div class="tech-detail-item"><span>Updates:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">OTA Wireless</span></div>
+                        <div class="tech-detail-item"><span>App:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">iOS & Android compatible</span>
+                        </div>
+                        <div class="tech-detail-item"><span>Security:</span> <span
+                                style="color: var(--text-primary); margin-left: auto;">End-to-End Encrypted</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding text-center surface-card" style="margin-top: 4rem; border-radius: 0;">
+        <div class="container">
+            <h2 style="margin-bottom: 2rem;">Experience the Difference</h2>
+            <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-size: 1.5rem; margin-bottom: 1rem;">Drishya Sahayak.</h4>
+                    <p style="max-width: 300px; font-size: 0.95rem; color: var(--text-secondary);">
+                        Empowering the visually impaired through cutting-edge AI technology.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Pre-order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Drishya Sahayak. All rights reserved. <br>
+                <div class="footer-attribution">
+                    Designed & Engineered by <a href="developer.html">DhyandevRTX</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Templates for Modals -->
+    <div id="newsletter-modal" style="display: none;">
+        <div style="text-align: center;">
+            <h2 style="margin-bottom: 0.5rem;">Stay Updated</h2>
+            <p style="margin-bottom: 1.5rem;">Join our newsletter for the latest updates.</p>
+            <form class="flex" style="flex-direction: column; gap: 1rem;">
+                <input type="email" placeholder="Enter your email"
+                    style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-main); color: var(--text-primary); outline: none;">
+                <button type="button" class="btn btn-primary"
+                    onclick="closeModal(); window.showToast('Subscribed successfully!');">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

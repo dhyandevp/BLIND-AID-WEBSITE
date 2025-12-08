@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Drishya Sahayak</title>
+    <meta name="description" content="Get in touch with the Drishya Sahayak team for support and inquiries.">
+
+    <!-- Styles (Same as Index) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <style>
+        .contact-hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1000px;
+            margin: 4rem auto 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info-card {
+            background: var(--bg-surface-2);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            height: 100%;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-icon {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-primary);
+            width: 3rem;
+            height: 3rem;
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-content h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .info-content a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-content a:hover {
+            color: var(--accent-primary);
+        }
+
+        /* Form */
+        .contact-form {
+            background: var(--bg-surface);
+            padding: 2.5rem;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: var(--bg-main);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            color: var(--text-primary);
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: var(--accent-primary);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Map Placeholder */
+        .map-section {
+            height: 400px;
+            background: var(--bg-surface-2);
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="main-navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Drishya Sahayak.</a>
+            <ul class="nav-links desktop-only" style="list-style: none;">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="flex-center desktop-only" style="gap: 1rem;">
+                <a href="#newsletter" class="btn btn-ghost"
+                    onclick="window.openModal(document.getElementById('newsletter-modal').innerHTML)">Newsletter</a>
+                <a href="contact.html" class="btn btn-primary">Pre-order</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="contact-hero animate-on-scroll">
+        <div class="container">
+            <h1 style="margin-bottom: 1.5rem;">Get in <span class="text-gradient">Touch</span></h1>
+            <p style="font-size: 1.25rem; margin: 0 auto; max-width: 600px;">
+                Have questions about Drishya Sahayak? We're here to help.
+            </p>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Info Column -->
+                <div class="animate-on-scroll">
+                    <div class="contact-info-card">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <a href="mailto:drishyasahayak@gmail.com">drishyasahayak@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <a href="tel:+918281374024">+91 82813 74024</a>
+                                <p style="font-size: 0.85rem; margin-top: 0.25rem;">Mon-Fri, 9am - 6pm IST</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Headquarters</h4>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">
+                                    Drishya Labs, Tech Park,<br>
+                                    Kochi, Kerala, India - 682030
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="animate-on-scroll" style="transition-delay: 150ms;">
+                    <form class="contact-form"
+                        onsubmit="event.preventDefault(); window.showToast('Message sent! We\'ll get back to you shortly.'); this.reset();">
+                        <h3 style="margin-bottom: 2rem;">Send a Message</h3>
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select class="form-control" style="cursor: pointer;">
+                                <option>General Inquiry</option>
+                                <option>Pre-order Question</option>
+                                <option>Support Issue</option>
+                                <option>Partnership</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="How can we help?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <div class="map-section">
+        <div style="text-align: center;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                style="margin-bottom: 1rem; opacity: 0.5;">
+                <rect x="1" y="3" width="22" height="18" rx="2" ry="2"></rect>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="18" x2="8" y2="22"></line>
+                <line x1="16" y1="18" x2="16" y2="22"></line>
+                <line x1="1" y1="12" x2="23" y2="12"></line>
+                <line x1="12" y1="3" x2="12" y2="21"></line>
+            </svg>
+            <p>Interactive Map Component Loading...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-size: 1.5rem; margin-bottom: 1rem;">Drishya Sahayak.</h4>
+                    <p style="max-width: 300px; font-size: 0.95rem; color: var(--text-secondary);">
+                        Empowering the visually impaired through cutting-edge AI technology.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Pre-order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Twitter</a></li>
+                        <li><a href="features.html">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Drishya Sahayak. All rights reserved. <br>
+                <div class="footer-attribution">
+                    Designed & Engineered by <a href="developer.html">DhyandevRTX</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Templates for Modals -->
+    <div id="newsletter-modal" style="display: none;">
+        <div style="text-align: center;">
+            <h2 style="margin-bottom: 0.5rem;">Stay Updated</h2>
+            <p style="margin-bottom: 1.5rem;">Join our newsletter for the latest updates.</p>
+            <form class="flex" style="flex-direction: column; gap: 1rem;">
+                <input type="email" placeholder="Enter your email"
+                    style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-main); color: var(--text-primary); outline: none;">
+                <button type="button" class="btn btn-primary"
+                    onclick="closeModal(); window.showToast('Subscribed successfully!');">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sticky Chat Floating Action Button -->
+    <div style="position: fixed; bottom: 2rem; right: 2rem; z-index: 100;">
+        <button onclick="window.showToast('Live Chat connecting...')"
+            style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: var(--accent-primary); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); color: var(--bg-main); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.3s;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

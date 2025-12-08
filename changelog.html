@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog | Drishya Sahayak</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Satoshi:wght@500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .badge-new {
+            background: var(--accent-primary);
+            color: #000;
+        }
+
+        .badge-fix {
+            background: #333;
+            color: #fff;
+            border: 1px solid #555;
+        }
+
+        .badge-improve {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+        }
+
+        .changelog-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 4rem;
+            border-left: 2px solid var(--border-subtle);
+        }
+
+        .changelog-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--bg-surface);
+            border: 2px solid var(--text-secondary);
+        }
+
+        .changelog-item.latest {
+            border-left-color: var(--accent-primary);
+        }
+
+        .changelog-item.latest::before {
+            border-color: var(--accent-primary);
+            background: var(--accent-primary);
+        }
+
+        .version-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="main-navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Drishya Sahayak.</a>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="product.html" class="nav-link">Product</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="support.html" class="nav-link">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="section-padding text-center" style="padding-top: 8rem;">
+        <div class="container animate-on-scroll">
+            <h1 style="margin-bottom: 1rem;">Changelog</h1>
+            <p style="max-width: 500px; margin: 0 auto;">History of updates and improvements.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container animate-on-scroll" style="max-width: 800px;">
+
+            <!-- v1.1.0 -->
+            <div class="changelog-item latest">
+                <div class="version-header">
+                    <h2 style="margin: 0;">v1.1.0</h2>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Dec 08, 2025</span>
+                </div>
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <span class="badge badge-new">New Feature</span>
+                    <span class="badge badge-improve">Improvement</span>
+                </div>
+                <ul style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li><strong>Offline Navigation:</strong> Basic pathfinding now works without internet for cached
+                        areas.</li>
+                    <li><strong>Battery Life:</strong> Optimized sleep states extended battery by 15%.</li>
+                    <li>Improved voice clarity for the TTS engine.</li>
+                </ul>
+            </div>
+
+            <!-- v1.0.5 -->
+            <div class="changelog-item">
+                <div class="version-header">
+                    <h2 style="margin: 0;">v1.0.5</h2>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Nov 20, 2025</span>
+                </div>
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <span class="badge badge-fix">Fix</span>
+                </div>
+                <ul style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Fixed an issue where bluetooth audio would disconnect intermittently.</li>
+                    <li>Resolved a crash when switching between day/night modes.</li>
+                </ul>
+            </div>
+
+            <!-- v1.0.0 -->
+            <div class="changelog-item">
+                <div class="version-header">
+                    <h2 style="margin: 0;">v1.0.0</h2>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Oct 01, 2025</span>
+                </div>
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <span class="badge badge-new">Release</span>
+                </div>
+                <p>Initial Public Release of Drishya Sahayak Operating System.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-size: 1.5rem; margin-bottom: 1rem;">Drishya Sahayak.</h4>
+                    <p style="max-width: 300px; font-size: 0.9rem; color: var(--text-secondary);">
+                        Empowering the visually impaired through cutting-edge AI technology. Built for independence.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="product.html">Overview</a></li>
+                        <li><a href="features.html">Tech Specs</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="downloads.html">Drivers</a></li>
+                        <li><a href="support.html">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; border-top: 1px solid var(--border-subtle); padding-top: 2rem; color: var(--text-tertiary); font-size: 0.85rem;">
+                &copy; 2025 Drishya Sahayak. All rights reserved. <br>
+                <div style="margin-top: 0.5rem;">
+                    Developed by <a href="developer.html"
+                        style="color: var(--accent-primary); text-decoration: none;">DhyandevRTX</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

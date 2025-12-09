@@ -3,9 +3,6 @@
 > **Perceive reality beyond sight.**
 > Next-generation AI vision assistant for the visually impaired. **Currently in Public Beta.**
 
-[![Watch the Film](https://img.youtube.com/vi/7CZvz8eTNHY/0.jpg)](https://youtu.be/7CZvz8eTNHY?si=uA5kHZqvApcyDdT-)
-
-![Project Banner](assets/engineering_workshop.png)
 
 ## 📖 Overview
 

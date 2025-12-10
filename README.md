@@ -1,5 +1,10 @@
 # 👁️ Drishya Sahayak (Blind Aid)
 
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+
 > **Perceive reality beyond sight.**
 > Next-generation AI vision assistant for the visually impaired. **Currently in Public Beta.**
 
